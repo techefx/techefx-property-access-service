@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: techefx-property-access-service
+  profiles:
+    active: dev
+
+server:
+  port: ${port:8100}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
